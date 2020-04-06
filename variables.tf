@@ -5,7 +5,7 @@ variable "project-tag" {
 }
 
 variable "vault-port" {
-  type = int
+  type = number
   description = "The UI port for Vault communication"
   default = 8200
 }
