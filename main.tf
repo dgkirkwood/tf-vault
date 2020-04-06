@@ -54,8 +54,8 @@ resource "aws_security_group" "vault" {
 resource "aws_security_group_rule" "vault_inbound" {
   type = "ingress"
   security_group_id = aws_security_group.vault.id
-  from_port = var.vault_port
-  to_port = var.vault_port
+  from_port = var.vault-port
+  to_port = var.vault-port
   protocol = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
 
